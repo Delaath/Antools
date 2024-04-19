@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto&display=swap"
@@ -16,14 +19,14 @@
 </head>
 
 <body>
-    <section class="hero">
-        <header class="header container">
+    <section class="hero container container-2">
+        <header class="header container animate__animated animate__fadeInDown">
             <ul class="header-list">
                 <li class="header-item"><a href="/"><img src="./img/logo.png" alt="logo"></a></li>
                 <li class="header-item"><a href="/" class="logo-text">antools.</a></li>
             </ul>
 
-            <ul class="header-list">
+            <ul class="header-list animate__animated animate__fadeInDown">
                 <li class="header-item"><a href="#" class="header-nav">Home</a></li>
                 <li class="header-item"><a href="#" class="header-nav">Categories <img src="./img/hero-categories.png"
                             alt=""></a></li>
@@ -37,34 +40,37 @@
             </ul>
         </header>
 
-        <div class="hero-caption container">
+        <div class="hero-caption container animate__animated animate__fadeInLeft">
             <h3 class="hero-title">Awesome tools for Designer & Developer<span class="hero-span">.</span></h3>
             <p class="hero-subtitle">Antool is a web collection of information on paid or free Design and Development
                 tools</p>
 
             <form class="bunner-form">
                 <div class="bunner-input-wrap">
-                    <input type="text" class="bunner-input" placeholder="find more than 430+ tools..." />
+                    <input type="text" class="bunner-input" placeholder="find more than 430+ tools...">
                     <button type="button" class="bunner-btn">Search</button>
                 </div>
             </form>
         </div>
 
 
-        <ul class="social-media container">
-            <li class="social-item"><img src="./img/facebook.png" alt="facebook"></li>
-            <li class="social-item"><img src="./img/instagram.png" alt="instagram"></li>
-            <li class="social-item"><img src="./img/twitter.png" alt="twitter"></li>
+        <ul class="social-media container animate__animated animate__fadeInUp animate__delay-1s">
+            <li class="social-item"><a href="https://www.facebook.com/?locale=uk_UA" target="_blank"><img
+                        src="./img/facebook.png" alt="facebook"></a></li>
+            <li class="social-item"><a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram.png"
+                        alt="instagram"></a></li>
+            <li class="social-item"><a href="https://twitter.com/?lang=uk" target="_blank"><img src="./img/twitter.png"
+                        alt="twitter"></a></li>
         </ul>
     </section>
 
     <main>
-        <section class="tools container">
+        <section class="tools container animate__animated animate__fadeInUp">
             <h3 class="tools-title">Most Popular Tools</h3>
             <p class="tools-subtitle">Tools for the best Designers and Developers
                 most popularly used in the world</p>
 
-            <ul class="tools-list">
+            <ul class="tools-list" >
                 <li class="tools-item">
                     <img src="./img/grommet-icons_figma.png" alt="figma" class="tools-img">
                     <div class="tools-div">
@@ -166,7 +172,7 @@
             </div>
         </section>
 
-        <section class="brands container">
+        <section class="brands container animate__animated animate__fadeIn">
             <h3 class="brands-title">Trusted more than 150+ brand</h3>
             <ul class="brands-list">
                 <li class="brands-items"><img src="./img/logos_microsoft.png" alt="microsoft" class="brands-img"></li>
@@ -263,7 +269,8 @@
                     do. Velit ex tempor cillum ad sint occaecat. Do nulla velit labore occaecat do deserunt Lorem magna
                     officia incididunt consectetur amet. Sunt consectetur veniam minim ex commodo sint non. Occaecat
                     aute officia excepteur non laboris id qui ad.</p>
-                <button type="button" class="team-button"><img src="./img/chevron-right.png" alt="button-right"></button>
+                <button type="button" class="team-button"><img src="./img/chevron-right.png"
+                        alt="button-right"></button>
             </div>
             <img src="./img/team-slider.png" alt="slider" class="team-slider">
         </section>
@@ -271,35 +278,69 @@
         <section class="contributor container">
             <h3 class="contributor-title">Become a contributor?</h3>
             <p class="contributor-subtitle">Join us and get tips & tricks to become a great Designer and Developer</p>
-            
+
             <form class="bunner-form">
                 <div class="bunner-input-wrap-email">
-                  <input
-                            type="email"
-                            class="bunner-input"
-                            placeholder="Enter your email..."
-                          />
-                  <button type="button" class="bunner-btn">Join Us</button>
-                        </div>
-                      </form>
+                    <input type="email" class="bunner-input" placeholder="Enter your email...">
+                    <button type="button" class="bunner-btn">Join Us</button>
+                </div>
+            </form>
         </section>
         <hr class="footer-line">
     </main>
 
-    <footer>
+    <footer class="footer container">
+        <div class="first-div-footer">
+            <div class="div-footer-logo">
+                <a href="#"><img src="./img/footer-logo.png" alt="footer-logo" class="footer-logo-img"></a>
+                <a href="#">
+                    <h3 class="footer-logo">antools.</h3>
+                </a>
+            </div>
+
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <h3 class="footer-item-title">Copyright 2021. Antools</h3>
+                </li>
+
+                <li class="footer-item">
+                    <p class="footer-text">Antool is a web collection of information on paid or free Design and
+                        Development
+                        tools</p>
+                </li>
+            </ul>
+        </div>
+
         <ul class="footer-list">
-            
+            <li class="footer-item">
+                <h3 class="footer-item-title">Contact Us</h3>
+            </li>
+            <li class="footer-item"><a href="tel:+621987463" class="footer-link">+621987463</a></li>
+            <li class="footer-item"><a
+                    href="https://www.google.com/maps/place/%D0%90%D0%A2%D0%91/@49.0100945,31.3953277,15.3z/data=!4m9!1m2!2m1!1sM+Building,+No.10+A!3m5!1s0x40d17775b49efc03:0x296c5ce5c5ffb1cd!8m2!3d49.0125787!4d31.3961316!16s%2Fg%2F1pp2vfr28?entry=ttu"
+                    target="_blank" class="footer-link">M Building, No.10 A</a></li>
+            <li class="footer-item"><a href="mailto:antools@awesome.com" class="footer-link">antools@awesome.com</a>
+            </li>
         </ul>
+
         <ul class="footer-list">
-            
+            <li class="footer-item">
+                <h3 class="footer-item-title">Categories</h3>
+            </li>
+            <li class="footer-item"><a href="#" class="footer-link">Design</a></li>
+            <li class="footer-item"><a href="#" class="footer-link">Development</a></li>
         </ul>
+
         <ul class="footer-list">
-            
-        </ul>
-        <ul class="footer-list">
-            
+            <li class="footer-item">
+                <h3 class="footer-item-title">Company Info</h3>
+            </li>
+            <li class="footer-item"><a href="#" class="footer-link">About Us</a></li>
+            <li class="footer-item"><a href="#" class="footer-link">Our Partners</a></li>
+            <li class="footer-item"><a href="#" class="footer-link">Blog</a></li>
         </ul>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
